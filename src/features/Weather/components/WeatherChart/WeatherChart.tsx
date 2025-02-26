@@ -27,7 +27,7 @@ const WeatherChart: React.FC = () => {
       hour: '2-digit',
       minute: '2-digit',
     });
-    lineOne.dataLine[index] = item.main.temp - 273.15;
+    lineOne.dataLine[index] = Math.round(item.main.temp - 273.15);
   });
 
   return (
